@@ -7,6 +7,6 @@ import android.test.InstrumentationTestCase;
  */
 public class ApplicationTest extends InstrumentationTestCase {
     public void testFail() {
-        assertEquals(false, true);
+        assertEquals(true, true);
     }
 }
