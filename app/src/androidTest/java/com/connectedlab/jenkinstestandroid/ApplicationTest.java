@@ -24,7 +24,7 @@ public class ApplicationTest extends ActivityInstrumentationTestCase2<MainActivi
 
 // Validate that ReceiverActivity is started
         MainActivity mainActivity = (MainActivity)
-                receiverActivityMonitor.waitForActivityWithTimeout(5);
+                receiverActivityMonitor.waitForActivityWithTimeout(30000);
         TouchUtils.clickView(this, mainActivity.findViewById(R.id.button));
         assertNotNull("ReceiverActivity is null", mainActivity);
         assertEquals("Monitor for ReceiverActivity has not been called",
